@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="apple-touch-icon" sizes="57x57" href="/favicons1/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/favicons1/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/favicons1/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/favicons1/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/favicons1/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/favicons1/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/favicons1/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/favicons1/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons1/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/favicons1/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicons1/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/favicons1/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicons1/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/favicons1/manifest.json">
+        <link rel="mask-icon" href="/favicons1/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/favicons1/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/favicons1/mstile-144x144.png">
+        <meta name="msapplication-config" content="/favicons1/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <title>GHTSA</title>
+        
+        <!-- Google Fonts integration -->
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,900,700,100' rel='stylesheet' type='text/css'>
+
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome Icons -->
+        <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="assets/css/custom.css" rel="stylesheet">
+
+        <!-- Animation CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        
+        <script src="assets/js/jquery.js" type="text/javascript"></script>
+
+        <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+
+    <body id="tsa"> 
+        <div id="preloader-gif"><h1>LOADING</h1></div>
+        <section id="navbar">
+            <nav class="navbar navbar-fixed-top navbar-custom" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle c-hamburger c-hamburger--htx" data-toggle="collapse" data-target=".navbar-main-collapse">
+                            <span>toggle menu</span>
+                        </button>
+                    </div><!-- navbar-header -->
+                    <a href="index.html">
+                       <div class="switcher">
+                        <h2>HOME</h2>
+                        </div><!-- switcher -->
+                    </a>
+                   
+                    <div class="collapse navbar-collapse navbar-main-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="link1"><h2><a href="#tsa-summary">Summary</a></h2></li>
+                            <li class="link2"><h2><a href="#tsa-undertakings">Undertakings</a></h2></li>
+                            <li class="header-logo link5"><img src="assets/img/tsa.png" alt="Global High School Wolf Logo Mascot"></li>
+                            <li class="link3"><h2><a href="#tsa-officers">Leadership</a></h2></li>
+                            <li class="link4"><h2><a href="#teched">Tech Ed</a></h2></li>
+                        </ul><!-- nav -->
+                    </div><!-- colapse -->
+                </div><!-- container -->
+            </nav>
+        </section><!-- navbar -->
+        
+        
+
+
+        <style>
+            body, html {
+                height: 100%;
+            }
+
+            .box-hero {
+                padding-top: 2%;
+                height: 100% !important;
+                display: block;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                -webkit-transform: translate3d(0,0,0);
+            }
+            
+            .hero-box {
+                position: absolute;
+                margin-top: 5%;
+            }
+            
+            .box-hero img {
+                position: absolute;
+                right: 6%;
+                top: 34%;
+                width: 35%;
+                z-index: 4
+            }
+            
+            .text-box h1 {
+                text-transform: uppercase;
+                font-size: 8vw !important; /* 100px */
+                font-weight: 350 !important;
+                word-spacing: 40% !important;
+                padding: 30px;
+                background-color: #00FF8C !important:
+            }
+
+            .text-box {
+                position: absolute;
+                left: 10%;
+                top: 10%;
+                width: 40%;
+                background-color: #CC3300;
+                z-index: 4
+            }
+
+            .box1 {
+                background-color: #663333;
+                height: 40%;
+                width: 40%;
+                position: absolute;
+                left: 17%;
+                top: 42%;
+                z-index: 1
+            }
+
+            .box1:hover {
+                -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+                transition: all 1s;
+            }
+
+            .box2 {
+                background-color: #FFCC99;
+                height: 16%;
+                width: 8%;
+                position: absolute;
+                left: 37%;
+                top: 72%;
+                display: block;
+                z-index: 1;
+            }
+
+            .box3 {
+                background-color: #1c1c1c;
+                height: 50%;
+                width: 25%;
+                position: absolute;
+                right: 22%;
+                top: 7%;
+                z-index: 2;
+            }
+            
+            .text-box strong {
+                font-weight: 500 !important;
+                color: #292929;
+            }
+        </style>
+
+        <section class="box-hero" id="tsa-hero">
+            <div class="hero-box text-box" data-scroll-speed="0">
+                <h1>Global High School <strong>TSA</strong></h1>
+            </div>
+            <div class="hero-box box1" data-scroll-speed="-7"></div>
+            <div class="hero-box box2" data-scroll-speed="2"></div>
+            <div class="hero-box box3" data-scroll-speed="-2"></div>
+            <img src="assets/img/grouptsa.jpg" class="hero-box" alt="" data-scroll-speed="4">
+        </section>
+        
+        <section id="tsa-summary">
+            <div class="container">
+                <h1 class="lead">GHTSA <span class="underline">Summary</span></h1>
+
+                <div class="row">
+                    <div class="col-sm-9 summary-text">
+                        <p>TSA is a non-profit organization within schools that allows students to learn, make, and compete in topics they are interested in. TSA chapters take the study of STEM (science, technology, engineering, and mathematics) beyond the classroom and give students the chance to pursue academic challenges among friends with similar goals and interests. Together, chapter members work on competitive events, attend conferences on the state and national levels, and have a good time raising funds to get there. Chapter organization develops leadership, as members may become officers within state, and even national TSA. Our chapter is committed to help our members explore and succeed in their passions.</p>
+                        <br>
+                        <p>Waxahachie Global High School was founded in 2008 as one of the first STEM academies in the region. Global High is an early college high school, and has a project-based approach to learning in most its classes. Since its conception, TSA has fit in perfectly with the ideals of Global High. So, in the same year that Global was opened, Chapter 501 was born. Founded and led by April Moon, the chapter was instantly a huge success. The chapter hosted many community outreach programs, and promoted STEM within the school. The students participating in TSA also achieved success, sending multiple students to state and national competitions. Three years later, Scott Warren became the head advisor for TSA, and was succeeded by Michael Warren for the 2015-2016 school year. This year, TSA is the most successful club in the school, with the highest membership in Chapter 501's history. Hopefully the club will continue to advance at the same rate it is now, and we will see even more success in the future.</p>
+                    </div><!-- col -->
+                    
+                    <div class="summary-picture col-sm-3" data-scroll-speed="2">
+                        <img src="assets/img/tshirt.png" alt="">
+                    </div><!-- col -->
+                    
+                </div><!-- row -->
+                <h1 class="photo-gallery-title">TSA Photo Gallery</h1>
+            </div><!-- container -->
+            
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#" class="box">
+                            <img src="assets/img/grouptsa.jpg" class="img-responsive" alt="">
+                            <div class="box-caption">
+                                <div class="box-caption-content">
+                                    <div class="project-category text-faded">
+                                        GROUP TSA PHOTO
+                                    </div><!-- text -->
+                                </div><!-- box -->
+                            </div><!-- box-caption -->
+                        </a>
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#" class="box">
+                            <img src="assets/img/tsa5.jpg" class="img-responsive" alt="">
+                            <div class="box-caption">
+                                <div class="box-caption-content">
+                                    <div class="project-category text-faded">
+                                        PROBLEM SOLVING
+                                    </div><!-- text -->
+                                </div><!-- box -->
+                            </div><!-- box-caption -->
+                        </a>
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#" class="box">
+                            <img src="assets/img/tsa4.jpg" class="img-responsive" alt="">
+                            <div class="box-caption">
+                                <div class="box-caption-content">
+                                    <div class="project-category text-faded">
+                                        TSA MEETING
+                                    </div><!-- text -->
+                                </div><!-- box -->
+                            </div><!-- box-caption -->
+                        </a>
+                    </div><!-- col -->
+                    
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#" class="box">
+                            <img src="assets/img/tsa3.jpg" class="img-responsive" alt="">
+                            <div class="box-caption">
+                                <div class="box-caption-content">
+                                    <div class="project-category text-faded">
+                                    MENTORSHIP
+                                    </div><!-- text -->
+                                </div><!-- box -->
+                            </div><!-- box-caption -->
+                        </a>
+                    </div><!-- col -->
+
+                </div><!-- row -->
+            </div><!-- container-fluid -->
+        </section><!-- tsa-summary -->
+        
+        
+        <section id="tsa-undertakings">
+            <div class="container">
+                <h1 class="lead">GHTSA <span class="underline">Undertakings</span></h1>
+                <div class="row">
+                   
+                    <div class="undertakings-picture col-sm-3" data-scroll-speed="5">
+                        <img src="assets/img/computer.png" alt="">
+                    </div><!-- col -->
+                    
+                    <div class="col-sm-9 undertakings-text">
+                        <p>Chapter 501 is undoubtedly one of the most dynamic clubs at Global High School. One of the electives offered at the school is a TSA period, which allows students an hour and a half each period to focus on their TSA projects. This gives students more time to work on other clubs and activities outside of school outside of TSA. Many of the members of Chapter 501 actively participate in robotics, Interact, NHS, science club, and more.</p>
+                        <br>
+                        <p>In the past Global High has been an active participant in the Relay for Life, which is a charity sponsored by TSA. The club raised 4000-6000 dollars, with over 30 members participating in the event. The current president plans on re-introducing the tradition next year, and has plans in place to do so.</p>
+                        <br>
+                        <p>TSA students have enjoyed a great deal of success throughout the history of the club. Each year for the past eight years, Global has had at least one student advance to national competition. Over 80 percent of the students who compete make it to at least state competition,  which means almost all TSA members have a chance of making it to nationals.</p>
+                    </div><!-- col -->
+                </div><!-- row -->
+            </div><!-- container -->
+            <div class="undertakings-video">
+                <video autoplay muted loop>
+                    <source src="assets/img/moustrap.mp4" type="video/mp4">
+                    <source src="assets/img/moustrap.ogv" type="video/ogg">
+                    <source src="assets/img/moustrap.webm" type="video/webm">
+                        Your browser doesn't support HTML5 video. Here's a <a href="assets/img/video.mp4">link</a> to download the video.
+                </video>
+            </div>
+            <h2 class="copyright">TSA members create teams and problem solve to build a mousetrap catapult</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 undertakings-text">
+                    <p>One thing implemented by the current officer team is the introduction of problem solving challenges in each chapter meeting. In the challenges, the members are given a problem and a set of materials, and asked to present a solution. In the video above, TSA members were challenged to create a catapult that would launch a ping-pong ball, and the ball that went the furthest would win. They were given a mousetrap, popsicle sticks, paper, tape, and string. These challenges helped the club grow closer together this year, while encouraging a spirit of friendly competition.</p>
+                    <br>
+                    <p>Every year since the club began, Chapter 501 has been able to attend the TSA leadership conference at Kerrville. At this conference, officers learn and develop skills that will make them more effective leaders. In addition to lectures, seminars and team-building activities, there is also the annual cardboard boat race. Chapter 501 has often gotten first place in the regatta, although the title has been stripped from us the past two years. Below are the photos from this year's leadership conference, in which the officer team placed fourth.</p>
+                    </div><!-- col -->  
+                </div><!-- row -->
+            </div><!-- container -->
+                <h1 class="photo-gallery-title">Undertakings Photo Gallery</h1>
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#" class="box">
+                            <img src="assets/img/undertakings1.jpg" class="img-responsive" alt="">
+                            <div class="box-caption">
+                                <div class="box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Prepardness
+                                    </div><!-- text -->
+                                </div><!-- box -->
+                            </div><!-- box-caption -->
+                        </a>
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#" class="box">
+                            <img src="assets/img/undertakings2.jpg" class="img-responsive" alt="">
+                            <div class="box-caption">
+                                <div class="box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Accomplishment
+                                    </div><!-- text -->
+                                </div><!-- box -->
+                            </div><!-- box-caption -->
+                        </a>
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#" class="box">
+                            <img src="assets/img/undertakings3.jpg" class="img-responsive" alt="">
+                            <div class="box-caption">
+                                <div class="box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Teamwork
+                                    </div><!-- text -->
+                                </div><!-- box -->
+                            </div><!-- box-caption -->
+                        </a>
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#" class="box">
+                            <img src="assets/img/undertakings4.jpg" class="img-responsive" alt="">
+                            <div class="box-caption">
+                                <div class="box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Competition
+                                    </div><!-- text -->
+                                </div><!-- box -->
+                            </div><!-- box-caption -->
+                        </a>
+                    </div><!-- col -->
+
+                </div><!-- row -->
+            </div><!-- container-fluid -->
+        </section><!-- tsa-undertakings -->
+        
+        
+        <section id="tsa-officers">
+           <div class="container">
+                <h1 class="lead">Officers and advisors</h1>
+                <div class="col-sm-2">
+                    <div class="image-holder one">
+                        <img src="assets/img/levi/up.JPG" alt="Levi Villarreal up head image" class="head-image up center-block">
+                        <img src="assets/img/levi/upleft.JPG" alt="Levi Villarreal up-left head image" class="head-image up-left">
+                        <img src="assets/img/levi/left.JPG" alt="Levi Villarreal left head image" class="head-image left">
+                        <img src="assets/img/levi/downleft.JPG" alt="Levi Villarreal down-left head image" class="head-image down-left">
+                        <img src="assets/img/levi/down.JPG" alt="Levi Villarreal down head image" class="head-image down">
+                        <img src="assets/img/levi/downright.JPG" alt="Levi Villarreal down-right head image" class="head-image down-right">
+                        <img src="assets/img/levi/right.JPG" alt="Levi Villarreal right head image" class="head-image right">
+                        <img src="assets/img/levi/upright.JPG" alt="Levi Villarreal up-right head image" class="head-image up-right">
+                        <img src="assets/img/levi/front.JPG" alt="Levi Villarreal front head image" class="head-image front">
+                    </div><!-- col -->
+
+                    <div class="image-holder two">
+                        <img src="assets/img/sam/up.JPG" alt="Sam Trevino up head image" class="head-image up">
+                        <img src="assets/img/sam/upleft.JPG" alt="Sam Trevino up-left head image" class="head-image up-left">
+                        <img src="assets/img/sam/left.JPG" alt="Sam Trevino left head image" class="head-image left">
+                        <img src="assets/img/sam/downleft.JPG" alt="Sam Trevino down-left head image" class="head-image down-left">
+                        <img src="assets/img/sam/down.JPG" alt="Sam Trevino down head image" class="head-image down">
+                        <img src="assets/img/sam/downright.JPG" alt="Sam Trevino down-right head image" class="head-image down-right">
+                        <img src="assets/img/sam/right.JPG" alt="Sam Trevino right head image" class="head-image right">
+                        <img src="assets/img/sam/upright.JPG" alt="Sam Trevino up-right head image" class="head-image up-right">
+                        <img src="assets/img/sam/front.JPG" alt="Sam Trevino front head image" class="head-image front">
+                    </div><!-- col -->
+
+                    <div class="image-holder three">
+                        <img src="assets/img/chris/up.JPG" alt="Chris Klinck up head image" class="head-image up">
+                        <img src="assets/img/chris/upleft.JPG" alt="Chris Klinck up-left head image" class="head-image up-left">
+                        <img src="assets/img/chris/left.JPG" alt="Chris Klinck left head image" class="head-image left">
+                        <img src="assets/img/chris/downleft.JPG" alt="Chris Klinck down-left head image" class="head-image down-left">
+                        <img src="assets/img/chris/down.JPG" alt="Chris Klinck down head image" class="head-image down">
+                        <img src="assets/img/chris/downright.JPG" alt="Chris Klinck down-right head image" class="head-image down-right">
+                        <img src="assets/img/chris/right.JPG" alt="Chris Klinck right head image" class="head-image right">
+                        <img src="assets/img/chris/upright.JPG" alt="Chris Klinck up-right head image" class="head-image up-right">
+                        <img src="assets/img/chris/front.JPG" alt="Chris Klinck front head image" class="head-image front">
+                    </div><!-- image-holder -->
+                </div><!-- col -->
+
+                <div class="col-sm-8">
+                    <div class="image-holder four">
+                        <img src="assets/img/michael/up.JPG" alt="Michael Warren up head image" class="head-image up">
+                        <img src="assets/img/michael/upleft.JPG" alt="Michael Warren up-left head image" class="head-image up-left">
+                        <img src="assets/img/michael/left.JPG" alt="Michael Warren left head image" class="head-image left">
+                        <img src="assets/img/michael/downleft.JPG" alt="Michael Warren down-left head image" class="head-image down-left">
+                        <img src="assets/img/michael/down.JPG" alt="Michael Warren down head image" class="head-image down">
+                        <img src="assets/img/michael/downright.JPG" alt="Michael Warren down-right head image" class="head-image down-right">
+                        <img src="assets/img/michael/right.JPG" alt="Michael Warren right head image" class="head-image right">
+                        <img src="assets/img/michael/upright.JPG" alt="Michael Warren up-right head image" class="head-image up-right">
+                        <img src="assets/img/michael/front.JPG" alt="Michael Warren front head image" class="head-image front">
+                    </div><!-- col -->
+                    
+                    <div class="officer-info active michael">
+                        <h1 class="officer-name">Michael Warren</h1>
+                        <h1 class="officer-position">Chapter Advisor</h1>
+                        <h3 class="officer-description"><span class="underline1">Bio</span>Mr. Warren has been involved with TSA for 4 years. He currently teaches Animation, Graphics, and Programming in addition to managing a number of clubs and programs at Global High.</h3>
+                        <img src="assets/img/michael.png" alt="Michael Warren main image" class="officer-png">
+                    </div><!-- OFFICER-INFO -->
+                    
+                    <div class="officer-info sam">
+                        <h1 class="officer-name">Sam Trevino</h1>
+                        <h1 class="officer-position">Saergeant-at-arms</h1>
+                        <h3 class="officer-description"><span class="underline1">Bio</span>Sam is in her second year of TSA. She is the co-founder of the Pen-Pal club, and junior representative in Student Council. In her free time she enjoys walking her dog and watching The Office.</h3>
+                        <img src="assets/img/sam.png" alt="Sam Trevino main image" class="officer-png">
+                    </div><!-- OFFICER-INFO -->
+                    
+                    <div class="officer-info levi">
+                        <h1 class="officer-name">Levi Villarreal</h1>
+                        <h1 class="officer-position">President</h1>
+                        <h3 class="officer-description"><span class="underline1">Bio</span>Levi has competed in TSA for 3 years in structural engineering, Webmaster and software development. Outside of TSA, he is the president and founder of the Global High Book Club. He enjoys coding, reading and biking.</h3>
+                        <img src="assets/img/levi.png" alt="Levi Villarreal main image" class="officer-png">
+                    </div><!-- OFFICER-INFO -->
+                    
+                    <div class="officer-info luke">
+                        <h1 class="officer-name">Luke Stanton</h1>
+                        <h1 class="officer-position">Reporter</h1>
+                        <h3 class="officer-description"><span class="underline1">Bio</span>This is Luke Stanton’s third year in TSA. In the past he has competed and gone to nationals for structural engineering. Outside of school he actively participates in soccer and watching Netflix.</h3>
+                        <img src="assets/img/luke.png" alt="Luke Stanton main image" class="officer-png">
+                    </div><!-- OFFICER-INFO -->
+                    
+                    <div class="officer-info jenna">
+                        <h1 class="officer-name">Jenna Nguyen</h1>
+                        <h1 class="officer-position">Secretary</h1>
+                        <h3 class="officer-description"><span class="underline1">Bio</span>Jenna's been in TSA for two years and has competed in both promotional graphics and storybook. She has cool friends and loves puppies, movies and finger painting. </h3>
+                        <img src="assets/img/jenna.png" alt="Jenna Nguyen main image" class="officer-png">
+                    </div><!-- OFFICER-INFO -->
+                    
+                    <div class="officer-info chris">
+                        <h1 class="officer-name">Chris Klinck</h1>
+                        <h1 class="officer-position">Treasurer</h1>
+                        <h3 class="officer-description"><span class="underline1">Bio</span>Chris is in his third year of being a part of TSA. He recently started his own business  is the founder and president of the Global High Media Club. However, he is more proud of his wildly successful website <a href="http://www.potatosimulator.com">Potato Simulator</a>.</h3>
+                        <img src="assets/img/chris.png" alt="Chris Klinck main image" class="officer-png">
+                    </div><!-- OFFICER-INFO -->
+                    
+                    <div class="officer-info brittany">
+                        <h1 class="officer-name">Brittany Bates</h1>
+                        <h1 class="officer-position">Vice President</h1>
+                        <h3 class="officer-description"><span class="underline1">Bio</span>Brittany has been in TSA for 3 years. After graduating, she plans on going to Tarleton State University. In her off time she enjoys drinking coffee and hanging out with friends.</h3>
+                        <img src="assets/img/brittany.png" alt="Brittany Bates main image" class="officer-png">
+                    </div><!-- OFFICER-INFO -->
+                    
+                </div><!-- col -->
+
+                <div class="col-sm-2">
+                    <div class="image-holder five">
+                        <img src="assets/img/brittany/up.JPG" alt="Brittany Bates up head image" class="head-image up">
+                        <img src="assets/img/brittany/upleft.JPG" alt="Brittany Bates up-left head image" class="head-image up-left">
+                        <img src="assets/img/brittany/left.JPG" alt="Brittany Bates left head image" class="head-image left">
+                        <img src="assets/img/brittany/downleft.JPG" alt="Brittany Bates down-left head image" class="head-image down-left">
+                        <img src="assets/img/brittany/down.JPG" alt="Brittany Bates up down image" class="head-image down">
+                        <img src="assets/img/brittany/downright.JPG" alt="Brittany Bates up down-right image" class="head-image down-right">
+                        <img src="assets/img/brittany/right.JPG" alt="Brittany Bates right head image" class="head-image right">
+                        <img src="assets/img/brittany/upright.JPG" alt="Brittany Bates up-right head image" class="head-image up-right">
+                        <img src="assets/img/brittany/front.JPG" alt="Brittany Bates front head image" class="head-image front">
+                    </div><!-- col -->
+
+                    <div class="image-holder six" id="connect1">
+                        <img src="assets/img/jenna/up.JPG" alt="Jenna Nguyen up head image" class="head-image up">
+                        <img src="assets/img/jenna/upleft.JPG" alt="Jenna Nguyen up-left head image" class="head-image up-left">
+                        <img src="assets/img/jenna/left.JPG" alt="Jenna Nguyen left head image" class="head-image left">
+                        <img src="assets/img/jenna/downleft.JPG" alt="Jenna Nguyen down-left head image" class="head-image down-left">
+                        <img src="assets/img/jenna/down.JPG" alt="Jenna Nguyen down head image" class="head-image down">
+                        <img src="assets/img/jenna/downright.JPG" alt="Jenna Nguyen down-right head image" class="head-image down-right">
+                        <img src="assets/img/jenna/right.JPG" alt="Jenna Nguyen right head image" class="head-image right">
+                        <img src="assets/img/jenna/upright.JPG" alt="Jenna Nguyen up-right head image" class="head-image up-right">
+                        <img src="assets/img/jenna/front.JPG" alt="Jenna Nguyen front head image" class="head-image front">
+                    </div><!-- col -->
+
+                    <div class="image-holder seven" id="connect">
+                        <img src="assets/img/luke/up.JPG" alt="Luke Stanton up head image" class="head-image up">
+                        <img src="assets/img/luke/upleft.JPG" alt="Luke Stanton up-left head image" class="head-image up-left">
+                        <img src="assets/img/luke/left.JPG" alt="Luke Stanton left head image" class="head-image left">
+                        <img src="assets/img/luke/downleft.JPG" alt="Luke Stanton down-left head image" class="head-image down-left">
+                        <img src="assets/img/luke/down.JPG" alt="Luke Stanton down head image" class="head-image down">
+                        <img src="assets/img/luke/downright.JPG" alt="Luke Stanton down-right head image" class="head-image down-right">
+                        <img src="assets/img/luke/right.JPG" alt="Luke Stanton right head image" class="head-image right">
+                        <img src="assets/img/luke/upright.JPG" alt="Luke Stanton up-right head image" class="head-image up-right">
+                        <img src="assets/img/luke/front.JPG" alt="Luke Stanton front head image" class="head-image front">
+                    </div><!-- image-holder -->
+                </div><!-- col -->
+            </div><!-- container -->
+        </section><!-- tsa-officers -->
+        <!-- JavaScript -->
+        
+        
+        
+        <section id="teched">
+            <div class="container">
+                <div class="row">
+                    <h1 class="sort">STEM Courses</h1>
+                    <ul id="tabs">
+                        <div class="images text-center">
+
+
+                            <li class="active col-sm-4">
+                                <h2>Required Courses</h2>
+                            </li>
+
+                            <li class=" col-sm-4">
+                                <h2>STEM Electives</h2>
+                            </li>
+
+                            <li class=" col-sm-4">
+                                <h2>STEM Clubs</h2>
+                            </li>
+
+
+
+
+                        </div><!-- end images -->
+                    </ul>
+
+                    <ul id="tab">
+
+                        <li class="active">
+                            <h3>Required Courses - 9th</h3>
+                            <p>Pre-AP English I</p>
+                            <p>Pre-AP World Geography</p>
+                            <p>Pre-AP Biology</p>
+                            <p>Pre-AP Geometry</p>
+                            <p>Introduction to Engineering and Design (IED)</p>
+                            <p>Computer – Professional Communications</p>
+                            <p>Spanish I</p>
+                            <p>DC PE 1</p>
+                            <p>DC PE 2</p>
+                            
+                            <h3>Required Courses - 10th</h3>
+                            <p>Pre-AP English II</p>
+                            <p>Pre-AP World History</p>
+                            <p>Pre-AP Chemistry</p>
+                            <p>Pre-AP Algebra II</p>
+                            <p>DC Principles of Engineering (POE)</p>
+                            <p>Spanish II</p>
+                            <p>DC Art I</p>
+                            
+                            <h3>Required Courses - 11th</h3>
+                            <p>DC US History</p>
+                            <p>Pre-AP Physics</p>
+                            <p>DC College Algebra</p>
+                            <p>Civil Engineering</p>
+                            <p>DC Spanish III</p>
+                            
+                            <h3>Required Courses - 11th</h3>
+                            <p>DC English IV</p>
+                            <p>US Government</p>
+                            <p>DC Chemistry</p>
+                            <p>DC Biology</p>
+                            <p>DC Calculus</p>
+                        </li>
+
+                        <li>
+                            <p>Computer Integrated Manufacturing</p>
+                            <p>Computer Maintenance</p>
+                            <p>Graphics</p>
+                            <p>Electronics</p>
+                            <p>Robotics &amp; Animation</p>
+                            <p>Networking</p>
+                            <p>Animation</p>
+                            <p>Programming</p>
+                            <p>Earth/Space Science</p> 
+                            <p>Advanced Programming</p>
+                            <p>Computer Tech</p>
+                            <p>Computer Capstone</p>
+                            <p>Engineering Capstone</p>  
+                            <p>DC Creative Writing</p>  
+                            <p>DC Technical Writing</p>
+                        </li>
+
+                        <li>
+                            <p>Technology Student Association</p>
+                            <p>FRC Robotics</p>
+                            <p>VEX Robotics</p>
+                            <p>Media Club</p>
+                            <p>Science Club</p>
+                            <p>Engineering Now</p>
+                            <p>Stock Market Club</p>
+                        </li>
+        </section>
+
+        </ul><!-- tab -->
+        </div><!-- row -->
+        </div>        
+        
+        
+        
+        <footer>
+            <div class="row">
+                <div class="col-sm-6 left-footer">
+                    <h2 class="footer-underline">Site Links</h2>
+                    <div class="row footer-content">
+                        <div class="col-sm-6 ">
+                            <h3>GHTSA</h2>
+                            <ul>
+                                <li><a href="tsa.html#tsa-summary">Summary</a></li>
+                                <li><a href="tsa.html#tsa-undertakings">Undertakings</a></li>
+                                <li><a href="tsa.html#tsa-officers">Leadership</a></li>
+                                <li><a href="tsa.html#teched">Tech Ed.</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Design Brief</h2>
+                            <ul>
+                                <li><a href="drones.html#2">Commercial</a></li>
+                                <li><a href="drones.html#3">Education &amp; Research</a></li>
+                                <li><a href="drones.html#4">Technology</a></li>
+                                <li><a href="drones.html#5">Concerns</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- left-footer -->
+
+                <div class="col-sm-6 right-footer">
+                    <h2 class="underline">About - <a href="about.html">Learn More</a></h2>
+                    <div class="footer-content">
+                        <h3>Website made by:</h3> 
+                        <h3>
+                            <a href="https://twitter.com/villarreallevi" target="_blank">Levi </a>/
+                            <a href="https://twitter.com/CKlinck98" target="_blank"> Chris </a>/
+                            <a href="https://twitter.com/NDalquest" target="_blank"> Nick </a>/
+                            <a href="https://twitter.com/themadradchad" target="_blank"> Chad </a>/
+                            <a href="https://twitter.com/indiepxnk" target="_blank"> Rachel</a>
+                        </h3>
+                        <h3>Copyright &copy; 2016</h3>
+                    </div>
+                </div><!-- right-footer -->
+            </div><!-- row -->
+        </footer>
+
+        
+        
+        <script type="text/javascript">
+            // Global Variables
+            var mouseX;
+            var mouseY;
+            var imageOne;
+            var imageTwo;
+            var imageThree;
+            var imageFour;
+            var imageFive;
+            var imageSix;
+            var ImageSeven
+            
+            //Initialization Function
+            $(init);
+            
+            //Re-initialize on load
+            $(window).load(init);
+            $(window).resize(init);
+            
+            //mousemove event
+            $(window).mousemove(getMousePosition);
+            
+            //Initialize images
+            function init(){
+                mouseX = 0;
+                mouseY = 0;
+                
+                imageOne = new HeadImage("one");
+                imageTwo = new HeadImage("two");
+                imageThree = new HeadImage("three");
+                imageFour = new HeadImage("four");
+                imageFive = new HeadImage("five");
+                imageSix = new HeadImage("six");
+                imageSeven = new HeadImage("seven");
+            }
+            
+            //called on mousemove
+            function getMousePosition(event) {
+                mouseX = event.pageX;
+                mouseY = event.pageY;
+                
+                imageOne.setImageDirection();
+                imageTwo.setImageDirection();
+                imageThree.setImageDirection();
+                imageFour.setImageDirection();
+                imageFive.setImageDirection();
+                imageSix.setImageDirection();
+                imageSeven.setImageDirection();
+            }
+            
+        </script>
+        <script src="assets/js/jquery-2.1.3.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/classie.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1538 @@
+/* ===============================
+    Custom CSS
+    By: Levi Villarreal
+    For: 2016 TSA Webmaster Competition
+    Completed: IN PROGRESS
+    Coded w/ love <3
+=============================== */
+
+
+/* ===============================
+    General
+   =============================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+/* ===============================
+    Global
+=============================== */
+
+a {
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    -webkit-transition: all 1s;
+    color: #3f7ff8;
+    transition: all 1s;  
+    text-decoration: none !important;
+    background: none !important;
+}
+
+a:hover {
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;    
+    color: #000000;
+}
+
+h2 > a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+h2 > a:hover {
+    color: #000;
+}
+
+h2 > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #959595;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+h2 > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.underline1 {
+    font-size: 30px !important;
+    display: block;
+    text-decoration: none;
+    border-bottom: 3px solid #65c4ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.underline {
+    text-decoration: none;
+    border-bottom: 3px solid #65c4ff;
+}
+
+
+/* ===============================
+    HOME PAGE CSS
+=============================== */
+
+body#home, 
+section#homepage,
+.homepage-left, 
+.homepage-right,
+.home-overlay,
+#homepage a
+{
+    height: 100%;
+}
+
+#homepage a {
+    width: 100%
+    
+}
+
+.homepage-left video {
+    position: absolute;
+    left: -0%;
+}
+
+.homepage-right video {
+    position: absolute;
+    right: -0%;
+}
+
+.homepage-left, 
+.homepage-right {
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.homepage-left:after, 
+.homepage-right:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(34, 50, 52, 0.26);
+    transition: all 1s ease-in-out;
+}
+
+.homepage-left:hover:after, 
+.homepage-right:hover:after {
+    background-color: rgba(0,0,0,0.0);
+    transition: all 1s ease-in-out;
+}
+
+
+@media (min-width: 768px) {
+    .homepage-left:before,
+    .homepage-right:before {
+        -webkit-transform: skewX(10deg);
+        -moz-transform: skewX(10deg);
+        -o-transform: skewX(10deg);
+        -ms-transform: skewX(10deg);
+        transform: skewX(10deg);
+    }
+    
+    video {
+        -webkit-transform: skewX(10deg);
+        -moz-transform: skewX(10deg);
+        -o-transform: skewX(10deg);
+        -ms-transform: skewX(10deg);
+        transform: skewX(10deg);
+        display: block;
+        position: relative;
+        z-index: ;
+        text-align: center;
+        opacity: .99;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    #homepage {
+        clear: both;
+        margin: 0 -80x;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .homepage-left,
+    .homepage-right {
+        background: #fff;
+        min-height: 670px;
+        -webkit-transform: skewX(-10deg);
+        -moz-transform: skewX(-10deg);
+        -o-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+        transform: skewX(-10deg);
+    }
+
+    .homepage-left {
+        border-right: 5px solid #fff;
+        top: 0;
+        left: 0;
+        width: 50%;
+    }
+
+    .homepage-left:hover {
+        width: 55%;
+        z-index: 9;
+    } 
+
+    .homepage-right {
+        top: 0;
+        border-left: 5px solid #fff;
+        right: 0;
+        width: 50%;
+    }
+
+    .homepage-right:hover {
+        width: 55%;
+        z-index: 9;
+    } 
+}
+
+.home-heading {
+    width: 50%;
+    color: #fff;
+    background: #009dff;
+    position: absolute;
+    text-transform: uppercase;
+    right: 0;
+    font-size: 45px;
+    padding: 30px;
+    -webkit-transform: skewX(10deg);
+    -moz-transform: skewX(10deg);
+    -o-transform: skewX(10deg);
+    -ms-transform: skewX(10deg);
+    transform: skewX(10deg);
+    z-index: 999999999999999999999999999999999999;
+    transition: all 1s ease-in-out;
+    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+}
+
+.home-heading h6 {
+    transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -o-transform: skew(10deg);
+}
+
+.home-heading:hover {
+    color: #009dff;
+    background: #fff;
+    transition: all 1s ease-in-out;
+}
+
+.heading-drones {
+    top: 10%;
+    text-align: right;
+    left: 10px;
+    padding-right: 50px;
+}
+
+.heading-ghtsa {
+    top: 70%;
+    text-align: left;
+    right: 10px;
+    padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+    #homepage {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #mobile-homepage {
+        display: none;
+    }
+}
+
+#mobile-homepage,
+#mobile-homepage col-sm-6 {
+    height: 100%
+}
+
+.mobile-section {
+    padding: 0;
+    margin: 0;
+    height: 50%;
+    width: 100%;
+}
+
+.mobile-section h1 {
+    background: #009dff;
+    width: 100%;
+    position: absolute;
+    margin-top: 30px;
+    padding: 10px 0 !important;
+    text-shadow: 0px 0px rgba(0, 0, 0, 0) !important;
+    transition: all 1s ease-in-out;
+    font-size: 50px !important;
+}
+
+.mobile-section h1:hover {
+    background: #fff;
+    color: #009dff !important;
+    transition: all 1s ease-in-out;
+}
+
+.mobile-drones {
+    background: url('../img/drone1.jpg') center center;
+    margin: 0 auto;
+}
+
+.mobile-ghtsa {
+    background: url('../img/global-mobile.jpg') center center;
+    margin: 0 auto;
+}
+
+.about-footer {
+    width: 100%;
+    height: 100%;
+    font-weight: 200;
+}
+
+
+
+.relative {
+    position: relative;
+    z-index: 99 !important;
+}
+
+body#home, .about-footer,  {
+    overflow: hidden !important;
+}
+
+.home-slider {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.home-slider h2 {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.49);
+    padding: 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+    position: relative;
+    cursor: pointer;
+}
+
+.home-slider h2:hover {
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    padding: 25px 0;
+    color: #464646;
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+}
+
+.home-footer-links {
+    padding-left: 10px;
+}
+/*.homepage-footer {
+position: absolute;
+bottom: 0;
+color: #fff;
+width: 100%;
+z-index: 999999999999999999999999999999999999999999999999;
+}
+
+.homepage-footer h2 {
+text-align: center;
+background: rgba(0, 0, 0, 0.49);
+padding: 25px 0;
+color: #fff;
+transition: all .5s ease-in-out;
+}
+
+.homepage-footer h2:hover {
+background: rgba(255, 255, 255, 0.49);
+padding: 35px 0;
+color: #000000;
+transition: all .5s ease-in-out;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================================
+    TSA SECTION CSS
+============================================================== */
+
+/* ===============================
+    Nav
+=============================== */
+
+div.switcher {
+    width: 170px;
+    height: 90px;
+    background: #65c4ff;
+    -webkit-clip-path: polygon(0 0, 100% 0, 59% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 59% 100%, 0% 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    z-index: 999999999999999999999999999999999999999999999999;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+@media(max-width:768px) {
+    div.switcher {
+        height: 61px;
+        width: 130px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+div.switcher:hover {
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    background: #009dff;
+}
+
+.switcher h2 {
+    color: white;
+    padding: 5px;
+    margin-left: 5%;
+    margin-top: 12%;
+    font-size: 28px;
+    margin-right: 28%;
+    text-align: center;
+    transform: skewX(170deg);
+    -webkit-transform: skewX(170deg);
+    -moz-transform: skewX(170deg);
+    -o-transform: skewX(170deg);
+    -ms-transform: skewX(170deg);
+    background: none;
+}
+
+.secondary-icon {
+    width: 100%;
+    height: 100%;
+}
+
+ul.navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#navbar li {
+    color: #000;
+    padding: 0 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+@media(max-width:1360px) {
+    #navbar li {
+        padding: 0 15px;
+        font-size: 18px;
+    }
+}
+
+@media(min-width:1360px) {
+    .header-logo img {
+        transition: all .5s ease-in-out;
+        height: 199px !important;
+        width: 300px !important;
+        margin-top:15%;
+        margin-bottom: 25%;
+    }
+}
+
+@media(max-width:1050px) {
+    .header-logo img {
+        display: none;
+    }
+    
+    #navbar li {
+        padding: 0 10px !important;
+        font-size: 18px;
+    }
+    
+    #navbar ul {
+        padding-left: 50px !important;
+    }
+}
+
+@media(max-width:768px) {
+
+    #navbar ul {
+        padding-left: 0 !important;
+    }
+    
+    .navbar {
+        background: #fff !important;
+    }
+    
+    .navbar-custom h2 a {
+        color: #000000 !important;
+    }
+    
+    #navbar ul li {
+        padding: 10px 0 !important;
+    }
+    
+    #navbar ul li.link5 {
+        padding: 0 !important;
+    }
+}
+
+.header-logo {
+    transition: ease-in-out;
+    -webkit-transition: background .4s ease-in-out,padding .4s ease-in-out;
+    -moz-transition: background .4s ease-in-out,padding .4s ease-in-out;
+    -o-transition: background .4s ease-in-out,padding .4s ease-in-out;
+}
+
+.header-logo img {
+    transition: all .5s ease-in-out;
+    height: 99px;
+    width: 150px;
+    margin-top:15%;
+    margin-bottom: 25%;
+}
+
+.link-5 {
+    display: none !important;
+}
+
+.logo-collapse img{
+    transition: all .5s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    height: 66px !important;
+    width: 100px !important;
+    margin: 0% 50%;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+@media(max-width:767px) {
+    .logo-collapse img, .link5 img{
+        display: none;
+    }
+    
+    .tsa-hero-content img {
+        display: none;
+    }
+}
+
+
+nav {
+    z-index: 999999999999999999999999;
+}
+
+#navbar {
+    top: 0;
+    width: 100%;
+    z-index: 999999999999999999999999;
+}
+
+#navbar ul {
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+li a {
+    font-size: 20px;
+    color: #000;
+}
+
+.navbar-custom h2 a {
+    color: #000000;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.top-nav-collapse h2 a {
+    color: #000000;
+}
+
+ul {
+    text-align: center;
+}
+
+@media(max-width:1205px) {
+    #navbar li {
+        color: #000;
+        padding: 0 20px;
+        font-size: 25px;
+    }
+}
+
+@media(min-width:767px) {
+    .navbar {
+        background: 0 0;
+        height: 70px !important;
+        transition: ease-in-out;
+        -webkit-transition: background .4s ease-in-out,padding .4s ease-in-out;
+        -moz-transition: background .4s ease-in-out,padding .4s ease-in-out;
+        -o-transition: background .4s ease-in-out,padding .4s ease-in-out;
+        padding: 20px 0;
+    }
+
+}
+
+
+.top-nav-collapse {
+    background: #ffffff;
+}
+
+/* Hamburge Icon transitions */
+.c-hamburger {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 96px;
+    height: 60px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none; 
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+    outline: none;
+}
+
+.c-hamburger span {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 18px;
+    right: 18px;
+    height: 2px;
+    background: #000000;
+    width: 30%;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    content: "";
+}
+
+.c-hamburger span::before {
+    top: -8px;
+}
+
+.c-hamburger span::after {
+    bottom: -8px;
+}
+
+.c-hamburger--htx {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.c-hamburger--htx span {
+    transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+    transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+    transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.c-hamburger--htx.is-active span {
+    background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+    transition-delay: 0s, 0.3s;
+}
+
+
+/* ===============================
+    TSA
+=============================== */
+
+#tsa, #teched, #home, #drones {
+    font-family: 'Raleway', sans-serif;
+}
+
+#tsa h1, #drones h1 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.tsa-hero-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.43);
+}
+
+.tsa-hero-content {
+    text-align: center;
+    position: relative;
+    top: 15%;
+    transform: translateY(-15%);
+}
+
+.tsa-hero-content h1 {
+    display: inline;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.strong, b {
+    font-weight: 900;
+}
+
+img.tsa-logo {
+    display: inline;
+    vertical-align: middle;
+    height: 300px !important;
+    width: 300px !important;
+    visibility: hidden;
+}
+
+.tsa-hero-text {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 10%;
+    transform: translateY(-20%);
+}
+
+img.brush {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media(max-width:830px) {
+    .tsa-hero-content {
+        position: relative;
+        margin-top: 100px;
+    }
+    
+    .tsa-hero-text {
+        margin-top: 100px;
+    }
+    
+    .invisible {
+        display: none;
+    }
+    
+    img.tsa-logo {
+        display: none;
+    }
+}
+
+
+.invisible {
+    visibility: hidden;
+    color: rgba(0, 0, 0, 0);
+}
+
+/* ===============================
+    BUBBLES
+=============================== */
+
+@media(max-width:768px) {
+    .nav-bubbles {
+        display: none !important;
+    }
+    
+    .undertakings-picture {
+        display: none !important;
+    }
+    
+    .summary-picture {
+        display: none !important;
+    }
+}
+
+.nav-bubbles {
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: block;
+    z-index: 99999;
+}
+
+.bubble {
+    height: 15px;
+    width: 15px;
+    background: #2a2a2a;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    float: right;
+    box-shadow: 0px 0px 0px 2px #dedede;
+}
+
+.bubble-nav {
+    padding: 15px;
+}
+
+.bubble-nav p {
+    display: inline;
+    clear: both;
+    padding: 0 12px;
+    visibility: hidden;
+    font-weight: 400;
+    color: #000;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.active .bubble {
+    box-shadow: 0px 0px 0px 4px #65c4ff;
+}
+
+.active p {
+    visibility: visible;
+}
+
+/* ===============================
+    TSA SUMMARY
+=============================== */
+@media(max-width:768px) {
+    #tsa-summary h1.lead {
+        text-transform: uppercase;
+        font-size: 35px !important;
+        text-align: center !important;
+        position: relative;
+        bottom: 0px !important;
+        right: 0% !important;
+        word-spacing: 9999999px;
+    }
+}
+
+#tsa-summary {
+    width: 100%;
+}
+
+#tsa-summary h1.lead {
+    text-transform: uppercase;
+    font-size: 45px;
+    text-align: right;
+    position: relative;
+    bottom: 80px;
+    right: 25%;
+    word-spacing: 9999999px;
+}
+
+.summary-text, .summary-picture {
+    display: inline;
+}
+
+.summary-text {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 60px;
+    padding: 20px;
+    position: relative;
+    display: block;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.col-sm-4, .row, #tsa-summary {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.summary-picture {
+    position: absolute;
+    right: 15%;
+}
+/* ===============================
+    TSA Undertakings
+=============================== */
+
+#tsa-undertakings {
+    width: 100%;
+}
+
+.col-sm-3 {
+    padding: 0 !important;
+    margin:  0 !important;
+}
+
+@media(max-width:768px) {
+    #tsa-undertakings h1.lead {
+        font-size: 35px !important;
+        text-align: center !important;
+        position: relative;
+        left: 0% !important;
+    }
+}
+
+#tsa-undertakings h1.lead {
+    text-transform: uppercase;
+    font-size: 45px;
+    text-align: left;
+    position: relative;
+    left: 30%;
+    word-spacing: 9999999px;
+    margin-top: 100px;
+}
+
+.undertakings-text, .undertakings-picture {
+    display: inline;
+}
+
+.undertakings-text {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 60px;
+    padding: 20px;
+    position: relative;
+    display: block;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.6);
+    float: right;
+}
+
+.col-sm-4, .row, #tsa-undertakings {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.undertakings-picture {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.undertakings-video {
+    position: relative;
+    margin: 0 0 20px 0;
+    height: 500px;
+    overflow: hidden;
+}
+
+.undertakings-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+@media(max-width:768px) {
+    .undertakings-video {
+        position: relative;
+        margin: 0 0 20px 0;
+        height: 300px;
+        overflow: hidden;
+    }
+}
+
+
+.copyright {
+    color: #6d6d6d;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* ===============================
+    Photo Gallery
+=============================== */
+
+.photo-grid .col-lg-4{
+    height: 300px;
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.photo-grid .col-lg-4 img {
+    height: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.photo-gallery-title {
+    text-align: center;
+    margin-bottom: 30px;
+} 
+
+.box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.box .box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.62);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.box .box-caption .box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.box .box-caption .box-caption-content .project-category,
+.box .box-caption .box-caption-content .project-name {
+    padding: 0 15px;
+}
+
+.box .box-caption .box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.box .box-caption .box-caption-content .project-name {
+    font-size: 18px;
+}
+
+.box:hover .box-caption {
+    opacity: 1;
+}
+
+@media(min-width:768px) {
+    .box .box-caption .box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .box .box-caption .box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+
+.container-fluid, .col-sm-6, .col-sm-4  {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+/* ===============================
+    OFFICER SECTION
+=============================== */
+
+
+#tsa-officers .lead {
+    text-transform: uppercase;
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.image-holder{
+    position: relative;
+    height: 260px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.four {
+    height: 60px;
+}
+
+.head-image{
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    z-index: 999999;
+}
+
+.head-image:hover {
+    width: 100px;
+    height: 100px;
+    transition: all .5s;
+    z-index: 1;
+}
+
+.head-image{
+    z-index: 0;
+}
+
+.circle{
+    z-index: 2;
+}
+
+.front{
+    z-index: 1;
+}
+
+#tsa-officers .image-holder img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #65c4ff;
+}
+
+.officer-png {
+    width: 90%;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.officer-name {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 50px 0 10px 0;
+    display: inline;
+}
+
+.officer-position {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 20px !important;
+    font-weight: 200;
+}
+
+.officer-description {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.2em;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    padding: 10px;
+}
+
+.officer-info {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+@media(max-width:768px) {
+    .image-holder {
+        display: none;
+    }
+
+    #tsa-officers div.officer-info {
+        display: block !important;
+        text-align: center;
+        padding: 25px 0;
+    }
+    
+    #tsa-officers {
+        padding: 50px 0;
+    }
+
+    #tsa-officers .officer-info h1.officer-name {
+        text-align: center !important;
+    }
+
+    #tsa-officers .officer-info .officer-position {
+        text-align: center !important;
+    }
+
+    #tsa-officers .officer-info .officer-description {
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    #tsa-officers .officer-info .underline1 {
+        text-align: center;
+    }
+
+    .officer-png {
+        width: 100% !important;
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+
+
+/* ===============================
+    Footer
+=============================== */
+
+footer {
+    z-index: 99999;
+}
+
+.footer-underline {
+    text-decoration: none;
+    border-bottom: 3px solid #ffffff;
+}
+
+footer h2 {
+    font-size: 30px;
+    width: 100% !important;
+    display: block;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+
+footer h2 a {
+    color: #65c4ff;
+}
+
+.left-footer a {
+    color: #ffffff;
+}
+
+.left-footer a:hover {
+    color: #000000;
+}
+
+.left-footer, .right-footer {
+    margin-top: 10px;
+    display:inline-block;
+    padding: 70px !important;
+    height: 100%;
+}
+
+.footer-content {
+    padding-top: 30px !important;
+}
+
+footer h3 {
+    font-size: 22px;
+}
+
+footer ul {
+    padding-top: 15px !important;
+    padding-left: 20px;
+    text-align: left;
+}
+
+footer ul li {
+    margin: 10px 0;
+}
+
+.left-footer {
+    background: #65c4ff;
+    padding: 1000px;
+}
+
+@media(max-width:768px) {
+    .left-footer {
+        width: 100%;
+    }
+}
+
+.right-footer h3 {
+    padding: 0 0 20px 0;
+}
+
+/* ===============================
+    Tech-Ed
+=============================== */
+
+
+/* Tabs section */
+#tabs-section p {
+    font-size: 20px;
+}
+
+
+#teched h1 {
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+#tabs h2 {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+ul#tabs li {
+    list-style-type: none;
+    display: inline-block;
+}   
+
+ul#tabs li.active img{
+    border-color: #65c4ff;
+}   
+
+ul#tab li {
+    display: none;
+    list-style-type: none;
+    height: 100%;
+}   
+
+ul#tab li.active {
+    display: block;
+} 
+
+#tab {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#tabs {
+    margin-bottom: 150px;
+}
+
+@media(max-width:769px) {
+    #tabs {
+        margin-bottom: 30px;
+    }
+    ul#tabs li {
+        padding: 15px 0 !important;
+        display: block;
+    }   
+    
+    ul#tabs li.active {
+        color: #65c4ff
+    }
+}
+
+#tabs li {
+    cursor: pointer;
+}
+
+#tabs li.active {
+    border-bottom: 2px solid #65c4ff;
+}
+
+
+#home h1, #preloader-gif h1 {
+    font-size: 70px;
+    text-align: center;
+    padding-top: 10%;
+    color: white;
+}
+
+#preloader-gif h1 {
+    font-weight: 800 !important;
+    -webkit-text-stroke: 0px black;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.61);
+}
+
+html div#preloader-gif {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999999999999999999999999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #ffffff url('../img/loading-symbol.gif') no-repeat center center;
+    color: black;
+    font-size: 70px !important;
+    padding-top: 50px;
+    text-align: center;
+}
+
+@media(max-width:769px) {
+    
+    #preloader-gif h1 {
+        font-weight: 400 !important;
+        font-size: 30px;
+        -webkit-text-stroke: 0px black;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.61);
+    }
+}
+
+
+#teched h3 {
+    text-align: left;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+#teched p {
+    text-align: left;
+    font-size: 20px;
+    margin: 20px 0 20px 100px;
+}
+
+
+/* ===============================
+    Assets
+=============================== */
+/* Clearfix (includes support for older browsers) 
+http://stackoverflow.com/questions/8554043/what-is-clearfix 
+*/
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
